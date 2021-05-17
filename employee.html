@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Importaciones Estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+<!-- Content here -->
+    <div class="row">
+        <!---Employee Table-->
+        <div class="mt-5 card table-responsive">
+            <div class="d-flex justify-content-between  mt-3 card-header bg-white">
+                <h3 class="card-title">Lista de Empleados</h3>
+                <button class="btn btn-primary btn-sm" 
+                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fas fa-plus"></i> Registrar Empleado
+                  </button>
+            </div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">RFC</th>
+                    <th scope="col">Nombre completo</th>
+                    <th scope="col">Correo electronico</th>
+                    <th scope="col">Estatus</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>JUPEPE91SZDA1</td>
+                    <td>Juan Perez Perez</td>
+                    <td>juan@gmail.com</td>
+                    <td>Activo</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary  me-2"> 
+                                <i class="fas fa-edit"></i> Editar
+                            </button>
+                            <button class="btn btn-danger ">
+                                <i class="fas fa-trash-alt"></i> Eliminar
+                            </button>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>JOGAPE91GHA1</td>
+                    <td>Jose Garcia Perez</td>
+                    <td>Jose@gmail.com</td>
+                    <td>Activo</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary  me-2"> 
+                                <i class="fas fa-edit"></i> Editar
+                            </button>
+                            <button class="btn btn-danger ">
+                                <i class="fas fa-trash-alt"></i> Eliminar
+                            </button>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>MAHEPEASD2F1</td>
+                    <td>Maria Hernandez Perez</td>
+                    <td>Maria@gmail.com</td>
+                    <td>Activo</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary  me-2"> 
+                                <i class="fas fa-edit"></i> Editar
+                            </button>
+                            <button class="btn btn-danger ">
+                                <i class="fas fa-trash-alt"></i> Eliminar
+                            </button>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>ALGAGA123INL1</td>
+                    <td>Alfonso Garcia Garcia</td>
+                    <td>Alfonso@gmail.com</td>
+                    <td>Activo</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary  me-2"> 
+                                <i class="fas fa-edit"></i> Editar
+                            </button>
+                            <button class="btn btn-danger ">
+                                <i class="fas fa-trash-alt"></i> Eliminar
+                            </button>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>ALQUHEANSDJ1</td>
+                    <td>Alejandro Quintero Hernandez</td>
+                    <td>Alejandro@gmail.com</td>
+                    <td>Activo</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary  me-2"> 
+                                <i class="fas fa-edit"></i> Editar
+                            </button>
+                            <button class="btn btn-danger ">
+                                <i class="fas fa-trash-alt"></i> Eliminar
+                            </button>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>JIMOPEAXSDXN1</td>
+                    <td>Jimena Morales Perez</td>
+                    <td>jimena@gmail.com</td>
+                    <td>Activo</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary  me-2"> 
+                                <i class="fas fa-edit"></i> Editar
+                            </button>
+                            <button class="btn btn-danger ">
+                                <i class="fas fa-trash-alt"></i> Eliminar
+                            </button>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>VIMAGASADAD1</td>
+                    <td>Victor Martinez Garcia</td>
+                    <td>victor@gmail.com</td>
+                    <td>Activo</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary  me-2"> 
+                                <i class="fas fa-edit"></i> Editar
+                            </button>
+                            <button class="btn btn-danger ">
+                                <i class="fas fa-trash-alt"></i> Eliminar
+                            </button>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>ANROAGASDAD1</td>
+                    <td>Antonio Robles Aguilar</td>
+                    <td>antonio@gmail.com</td>
+                    <td>Activo</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary  me-2"> 
+                                <i class="fas fa-edit"></i> Editar
+                            </button>
+                            <button class="btn btn-danger ">
+                                <i class="fas fa-trash-alt"></i> Eliminar
+                            </button>
+                        </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="d-flex justify-content-end">
+                <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+        </div>
+        <!--Employee_createmodal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Registrar Empleado</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="">
+                    <div class="row">
+                      <div class="col-4 mb-3">
+                        <label for="" class="form-label">Nombre(s)</label>
+                        <input type="text" class="form-control" placeholder="Nombre(s)"/>
+                      </div>
+
+                      <div class="col-4 mb-3">
+                        <label for="" class="form-label">Primer apellido</label>
+                        <input type="text" class="form-control" placeholder="Primer apellido"/>
+                      </div>
+
+                      <div class="col-4 mb-3">
+                        <label for="" class="form-label">Segundo apellido</label>
+                        <input type="text" class="form-control" placeholder="Segundo apellido"/>
+                      </div>
+
+                      <div class="col-4 mb-3">
+                        <label for="" class="form-label">RFC</label>
+                        <input type="text" class="form-control" placeholder="RFC"/>
+                      </div>
+                      <div class="col-8 mb-3">
+                        <label for="" class="form-label">Correo electrónico</label>
+                        <input type="text" class="form-control" placeholder="Correo electrónico"/>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12 mb-3 text-end">
+                        <button class="btn btn-secondary">Cancelar</button>
+                        <button class="btn btn-primary">Registrar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+</body>
+<!-- Importaciones Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+</html>
