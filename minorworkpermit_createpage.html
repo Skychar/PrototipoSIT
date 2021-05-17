@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permisos a menores</title>
+    <!-- Importaciones Estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <!-- Content here -->
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Permisos a menores</h1>
+            </div>
+            <div class="col-md-4">
+                <br>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#minorPermitModal">
+                    Agregar permiso a menor
+                </button>
+                <!-- Inicio modal -->
+                <div class="modal fade" id="minorPermitModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="minorPermitModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="minorPermitModalLabel">Agregar permiso a menor</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Inicio formulario -->
+                                <div class="container">
+                                    <div class="row">
+                                        <label for="nombre">Nombre completo del menor:</label>
+                                        <input type="text" id="nombre" name="nombre" required>
+                                        <hr>
+                                        <label for="nacimiento">Fecha de nacimiento del menor:</label>
+                                        <input type="date" id="nacimiento" name="nacimiento" required>
+                                        <hr>
+                                        <label for="nombreCentro">Nombre o razón social del centro de trabajo:</label>
+                                        <input type="text" id="nombreCentro" name="nombreCentro" required>
+                                        <hr>
+                                        <label for="domicilioCentro">Domicilio del centro de trabajo:</label>
+                                        <input type="text" id="domicilioCentro" name="domicilioCentro" required>
+                                        <hr>
+                                        <label for="representante">Representante legal del menor:</label>
+                                        <input type="text" id="representante" name="representante" required>
+                                        <hr>
+                                        <label for="inicioPermiso">Inicio del permiso:</label>
+                                        <input type="date" id="inicioPermiso" name="inicioPermiso" required>
+                                        <hr>
+                                        <label for="finPermiso">Fin del permiso:</label>
+                                        <input type="date" id="finPermiso" name="finPermiso" required>
+                                        <hr>
+                                        <label for="actaMenor">Acta de nacimiento del menor:</label>
+                                        <input type="file" id="actaMenor" name="actaMenor" required>
+                                        <hr/>
+                                        <label for="credencialRepresentante">Credencial de elector del representante legal del menor:</label>
+                                        <input type="file" id="credencialRepresentante" name="credencialRepresentante" required>
+                                        <hr/>
+                                        <label for="constanciaMenor">Constancia de estudios del menor:</label>
+                                        <input type="file" id="constanciaMenor" name="constanciaMenor" required>
+                                        <hr/>
+                                        <label for="certificadoMenor">Certificado médico del menor:</label>
+                                        <input type="file" id="certificadoMenor" name="certificadoMenor" required>
+                                    </div>
+                                </div>
+                                <!-- Fin formulario -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-success">Registrar</button> <!-- Agregar mensaje de error si falta llenar algún campo y otro de éxito si se registró al menor correctamente -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin Modal -->
+            </div>
+            <!-- Inicio tabla de registros -->
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre del menor</th>
+                        <th scope="col">Centro de trabajo</th>
+                        <th scope="col">Domicilio del centro de trabajo</th>
+                        <th scope="col">Inicio del permiso</th>
+                        <th scope="col">Fin del permiso</th>
+                        <th scope="col">Acción 1</th>
+                        <th scope="col">Acción 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Menor 1</td>
+                        <td>Centro de trabajo 1</td>
+                        <td>Domicilio 1</td>
+                        <td>17/05/2021</td>
+                        <td>17/05/2022</td>
+                        <td><button type="button" class="btn btn-primary">Editar</button></td>
+                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Menor 2</td>
+                        <td>Centro de trabajo 2</td>
+                        <td>Domicilio 2</td>
+                        <td>28/05/2021</td>
+                        <td>28/05/2022</td>
+                        <td><button type="button" class="btn btn-primary">Editar</button></td>
+                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Menor 3</td>
+                        <td>Centro de trabajo 3</td>
+                        <td>Domicilio 3</td>
+                        <td>22/06/2021</td>
+                        <td>22/06/2022</td>
+                        <td><button type="button" class="btn btn-primary">Editar</button></td>
+                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Menor 4</td>
+                        <td>Centro de trabajo 4</td>
+                        <td>Domicilio 4</td>
+                        <td>23/06/2021</td>
+                        <td>23/06/2022</td>
+                        <td><button type="button" class="btn btn-primary">Editar</button></td>
+                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Menor 5</td>
+                        <td>Centro de trabajo 5</td>
+                        <td>Domicilio 5</td>
+                        <td>01/07/2021</td>
+                        <td>01/07/2022</td>
+                        <td><button type="button" class="btn btn-primary">Editar</button></td>
+                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Menor 6</td>
+                        <td>Centro de trabajo 6</td>
+                        <td>Domicilio 6</td>
+                        <td>15/07/2021</td>
+                        <td>15/07/2022</td>
+                        <td><button type="button" class="btn btn-primary">Editar</button></td>
+                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Menor 7</td>
+                        <td>Centro de trabajo 7</td>
+                        <td>Domicilio 7</td>
+                        <td>20/08/2021</td>
+                        <td>20/08/2022</td>
+                        <td><button type="button" class="btn btn-primary">Editar</button></td>
+                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Menor 8</td>
+                        <td>Centro de trabajo 8</td>
+                        <td>Domicilio 8</td>
+                        <td>26/08/2021</td>
+                        <td>26/08/2022</td>
+                        <td><button type="button" class="btn btn-primary">Editar</button></td>
+                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Fin tabla de registros -->
+        </div>
+    </div>
+
+
+</body>
+<!-- Importaciones Javascript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
+
+</html>
