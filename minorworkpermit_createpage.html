@@ -62,175 +62,216 @@
     <div class="container">
         <!-- Content here -->
         <div class="row">
-            <div class="col-md-8">
-                <h1>Permisos a menores</h1>
+            <!---Employee Table-->
+            <div class="mt-5 card table-responsive">
+                <div class="d-flex justify-content-between  mt-3 card-header bg-white">
+                    <h3 class="card-title">Permisos a menores</h3>
+                    <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#minorPermitModal">
+                        <i class="fas fa-plus"></i> Registrar
+                    </button>
+                </div>
+                <!-- Inicio tabla de registros -->
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre del menor</th>
+                            <th scope="col">Centro de trabajo</th>
+                            <th scope="col">Periodo del permiso</th>
+                            <th scope="col" colspan="2">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Iván Jesús Sotelo Colín</td>
+                            <td>Centro de trabajo 1</td>
+                            <td>17/05/2021 - 17/05/2022</td>
+                            <td><button type="button" class="btn btn-primary btn-sm"><i
+                                        class="far fa-edit"></i>Editar</button></td>
+                            <td><button type="button" class="btn btn-danger btn-sm"><i
+                                        class="far fa-trash-alt"></i>Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Mario Enrique Valverde Alvarez</td>
+                            <td>Centro de trabajo 2</td>
+                            <td>28/05/2021 - 28/05/2022</td>
+                            <td><button type="button" class="btn btn-primary btn-sm"><i
+                                        class="far fa-edit"></i>Editar</button></td>
+                            <td><button type="button" class="btn btn-danger btn-sm"><i
+                                        class="far fa-trash-alt"></i>Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Eduardo Figueroa García</td>
+                            <td>Centro de trabajo 3</td>
+                            <td>22/06/2021 - 22/06/2022</td>
+                            <td><button type="button" class="btn btn-primary btn-sm"><i
+                                        class="far fa-edit"></i>Editar</button></td>
+                            <td><button type="button" class="btn btn-danger btn-sm"><i
+                                        class="far fa-trash-alt"></i>Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Luis Alejandro Vázquez Muñíz</td>
+                            <td>Centro de trabajo 4</td>
+                            <td>23/06/2021 - 23/06/2022</td>
+                            <td><button type="button" class="btn btn-primary btn-sm"><i
+                                        class="far fa-edit"></i>Editar</button></td>
+                            <td><button type="button" class="btn btn-danger btn-sm"><i
+                                        class="far fa-trash-alt"></i>Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Ulises Emiliano Islas Escudero</td>
+                            <td>Centro de trabajo 5</td>
+                            <td>01/07/2021 - 01/07/2022</td>
+                            <td><button type="button" class="btn btn-primary btn-sm"><i
+                                        class="far fa-edit"></i>Editar</button></td>
+                            <td><button type="button" class="btn btn-danger btn-sm"><i
+                                        class="far fa-trash-alt"></i>Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Francisco Uriel Guerrero Rivera</td>
+                            <td>Centro de trabajo 6</td>
+                            <td>15/07/2021 - 15/07/2022</td>
+                            <td><button type="button" class="btn btn-primary btn-sm"><i
+                                        class="far fa-edit"></i>Editar</button></td>
+                            <td><button type="button" class="btn btn-danger btn-sm"><i
+                                        class="far fa-trash-alt"></i>Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Evelyn Sanchéz</td>
+                            <td>Centro de trabajo 7</td>
+                            <td>20/08/2021 - 20/08/2022</td>
+                            <td><button type="button" class="btn btn-primary btn-sm"><i
+                                        class="far fa-edit"></i>Editar</button></td>
+                            <td><button type="button" class="btn btn-danger btn-sm"><i
+                                        class="far fa-trash-alt"></i>Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Eugenio Cesár Santana</td>
+                            <td>Centro de trabajo 8</td>
+                            <td>26/08/2021 - 26/08/2022</td>
+                            <td><button type="button" class="btn btn-primary btn-sm"><i
+                                        class="far fa-edit"></i>Editar</button></td>
+                            <td><button type="button" class="btn btn-danger btn-sm"><i
+                                        class="far fa-trash-alt"></i>Eliminar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Fin tabla de registros -->
+                <div class="d-flex justify-content-end">
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="col-md-4">
-                <br>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#minorPermitModal">
-                    Agregar permiso a menor
-                </button>
-                <!-- Inicio modal -->
-                <div class="modal fade" id="minorPermitModal" data-bs-backdrop="static" data-bs-keyboard="false"
-                    tabindex="-1" aria-labelledby="minorPermitModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="minorPermitModalLabel">Agregar permiso a menor</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
+            <!-- Inicio modal -->
+            <!-- MODAL -->
+            <div class="modal fade" id="minorPermitModal" tabindex="-1" aria-labelledby="minorPermitModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="minorPermitModalLabel">Registrar permiso a menor</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
                                 <!-- Inicio formulario -->
                                 <div class="container">
                                     <div class="row">
-                                        <label for="nombre">Nombre completo del menor:</label>
-                                        <input type="text" id="nombre" name="nombre" required>
+                                        <label for="nombre" class="form-label">Nombre(s) del menor:</label>
+                                        <input type="text" id="nombre" name="nombre" class="form-control"
+                                            class="form-control" placeholder="Nombre(s)" required>
                                         <hr>
-                                        <label for="nacimiento">Fecha de nacimiento del menor:</label>
-                                        <input type="date" id="nacimiento" name="nacimiento" required>
+                                        <label for="apellidoPa" class="form-label">Apellido paterno del menor:</label>
+                                        <input type="text" id="apellidoPa" name="nombre" class="form-control"
+                                            class="form-control" placeholder="Apellido paterno" required>
                                         <hr>
-                                        <label for="nombreCentro">Nombre o razón social del centro de trabajo:</label>
-                                        <input type="text" id="nombreCentro" name="nombreCentro" required>
+                                        <label for="apellidoMa" class="form-label">Apellido materno del menor:</label>
+                                        <input type="text" id="apellidoMa" name="nombre" class="form-control"
+                                            class="form-control" placeholder="Apellido materno">
                                         <hr>
-                                        <label for="domicilioCentro">Domicilio del centro de trabajo:</label>
-                                        <input type="text" id="domicilioCentro" name="domicilioCentro" required>
+                                        <label for="nacimiento" class="form-label">Fecha de nacimiento del
+                                            menor:</label>
+                                        <input type="date" id="nacimiento" name="nacimiento" class="form-control" placeholder="Fecha de nacimiento"
+                                            required>
                                         <hr>
-                                        <label for="representante">Representante legal del menor:</label>
-                                        <input type="text" id="representante" name="representante" required>
+                                        <label for="nombreCentro" class="form-label">Nombre o razón social del centro de
+                                            trabajo:</label>
+                                        <input type="text" id="nombreCentro" name="nombreCentro" class="form-control" placeholder="Razón social"
+                                            required>
                                         <hr>
-                                        <label for="inicioPermiso">Inicio del permiso:</label>
-                                        <input type="date" id="inicioPermiso" name="inicioPermiso" required>
+                                        <label for="domicilioCentro" class="form-label">Domicilio del centro de
+                                            trabajo:</label>
+                                        <input type="text" id="domicilioCentro" name="domicilioCentro"
+                                            class="form-control" placeholder="Domicilio del centro de trabajo" required>
                                         <hr>
-                                        <label for="finPermiso">Fin del permiso:</label>
-                                        <input type="date" id="finPermiso" name="finPermiso" required>
+                                        <label for="representante" class="form-label">Representante legal del
+                                            menor:</label>
+                                        <input type="text" id="representante" name="representante" class="form-control"
+                                            placeholder="Nombre completo" required>
                                         <hr>
-                                        <label for="actaMenor">Acta de nacimiento del menor:</label>
-                                        <input type="file" id="actaMenor" name="actaMenor" required>
-                                        <hr/>
-                                        <label for="credencialRepresentante">Credencial de elector del representante legal del menor:</label>
-                                        <input type="file" id="credencialRepresentante" name="credencialRepresentante" required>
-                                        <hr/>
-                                        <label for="constanciaMenor">Constancia de estudios del menor:</label>
-                                        <input type="file" id="constanciaMenor" name="constanciaMenor" required>
-                                        <hr/>
-                                        <label for="certificadoMenor">Certificado médico del menor:</label>
-                                        <input type="file" id="certificadoMenor" name="certificadoMenor" required>
+                                        <label for="inicioPermiso" class="form-label">Inicio del permiso:</label>
+                                        <input type="date" id="inicioPermiso" name="inicioPermiso" class="form-control"
+                                            required>
+                                        <hr>
+                                        <label for="finPermiso" class="form-label">Fin del permiso:</label>
+                                        <input type="date" id="finPermiso" name="finPermiso" class="form-control"
+                                            required>
+                                        <hr>
+                                        <label for="actaMenor" class="form-label">Acta de nacimiento del menor:</label>
+                                        <input type="file" id="actaMenor" name="actaMenor" class="form-control"
+                                            required>
+                                        <hr />
+                                        <label for="credencialRepresentante" class="form-label">Credencial de elector
+                                            del representante legal del menor:</label>
+                                        <input type="file" id="credencialRepresentante" name="credencialRepresentante"
+                                            class="form-control" required>
+                                        <hr />
+                                        <label for="constanciaMenor" class="form-label">Constancia de estudios del
+                                            menor:</label>
+                                        <input type="file" id="constanciaMenor" name="constanciaMenor"
+                                            class="form-control" required>
+                                        <hr />
+                                        <label for="certificadoMenor" class="form-label">Certificado médico del
+                                            menor:</label>
+                                        <input type="file" id="certificadoMenor" name="certificadoMenor"
+                                            class="form-control" required>
                                     </div>
                                 </div>
                                 <!-- Fin formulario -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                                <button type="button" class="btn btn-success">Registrar</button> <!-- Agregar mensaje de error si falta llenar algún campo y otro de éxito si se registró al menor correctamente -->
-                            </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary">Registrar</button>
+                            <!-- Agregar mensaje de error si falta llenar algún campo y otro de éxito si se registró al menor correctamente -->
                         </div>
                     </div>
                 </div>
-                <!--Fin Modal -->
             </div>
-            <!-- Inicio tabla de registros -->
-            <table class="table table-striped table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nombre del menor</th>
-                        <th scope="col">Centro de trabajo</th>
-                        <th scope="col">Domicilio del centro de trabajo</th>
-                        <th scope="col">Inicio del permiso</th>
-                        <th scope="col">Fin del permiso</th>
-                        <th scope="col">Acción 1</th>
-                        <th scope="col">Acción 2</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Menor 1</td>
-                        <td>Centro de trabajo 1</td>
-                        <td>Domicilio 1</td>
-                        <td>17/05/2021</td>
-                        <td>17/05/2022</td>
-                        <td><button type="button" class="btn btn-primary">Editar</button></td>
-                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Menor 2</td>
-                        <td>Centro de trabajo 2</td>
-                        <td>Domicilio 2</td>
-                        <td>28/05/2021</td>
-                        <td>28/05/2022</td>
-                        <td><button type="button" class="btn btn-primary">Editar</button></td>
-                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Menor 3</td>
-                        <td>Centro de trabajo 3</td>
-                        <td>Domicilio 3</td>
-                        <td>22/06/2021</td>
-                        <td>22/06/2022</td>
-                        <td><button type="button" class="btn btn-primary">Editar</button></td>
-                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Menor 4</td>
-                        <td>Centro de trabajo 4</td>
-                        <td>Domicilio 4</td>
-                        <td>23/06/2021</td>
-                        <td>23/06/2022</td>
-                        <td><button type="button" class="btn btn-primary">Editar</button></td>
-                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Menor 5</td>
-                        <td>Centro de trabajo 5</td>
-                        <td>Domicilio 5</td>
-                        <td>01/07/2021</td>
-                        <td>01/07/2022</td>
-                        <td><button type="button" class="btn btn-primary">Editar</button></td>
-                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td>Menor 6</td>
-                        <td>Centro de trabajo 6</td>
-                        <td>Domicilio 6</td>
-                        <td>15/07/2021</td>
-                        <td>15/07/2022</td>
-                        <td><button type="button" class="btn btn-primary">Editar</button></td>
-                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td>Menor 7</td>
-                        <td>Centro de trabajo 7</td>
-                        <td>Domicilio 7</td>
-                        <td>20/08/2021</td>
-                        <td>20/08/2022</td>
-                        <td><button type="button" class="btn btn-primary">Editar</button></td>
-                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">8</th>
-                        <td>Menor 8</td>
-                        <td>Centro de trabajo 8</td>
-                        <td>Domicilio 8</td>
-                        <td>26/08/2021</td>
-                        <td>26/08/2022</td>
-                        <td><button type="button" class="btn btn-primary">Editar</button></td>
-                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- Fin tabla de registros -->
+            <!--Fin Modal -->
         </div>
     </div>
-
-
 </body>
 <!-- Importaciones Javascript -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
