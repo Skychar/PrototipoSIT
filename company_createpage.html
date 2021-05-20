@@ -62,7 +62,7 @@
     <div class="container">
         <!-- Content here -->
         <div class="row col-15 mt-5">
-            <div class="card mt-3">
+            <div class="card mt-3 mb-3">
                 <div class=" card-header bg-white mt-3">
                     <div class="row">
                         <div class="col-lg-6">
@@ -206,6 +206,7 @@
                 </nav>
             </div>
         </div>
+        </div><!--Modal 1-->
     </div>
 
     <!--Modal 1-->
@@ -221,12 +222,36 @@
                     <div class="row g-2">
                         <div class="col-md">
                             <label for="nombreEmpresa">Nombre Empresa</label>
-                            <input type="email" class="form-control" id="nombreEmpresa" placeholder="Nombre">
+                            <input type="text" class="form-control" id="nombreEmpresa" placeholder="Nombre">
                         </div>
 
                         <div class="col-md">
                             <label for="razon">Razón social</label>
-                            <input type="email" class="form-control" id="razon" placeholder="Razón social">
+                            <input type="text" class="form-control" id="razon" placeholder="Razón social">
+                        </div>
+                    </div>
+
+                    <div class="row g-2 mt-2">
+                        <div class="col-md">
+                            <label for="nombreEmpresa">Giro/Actividad principal</label>
+                            <input type="text" class="form-control" id="nombreEmpresa" placeholder="Nombre">
+                        </div>
+
+                        <div class="col-md">
+                            <label for="razon">Representante legal</label>
+                            <input type="text" class="form-control" id="razon" placeholder="Razón social">
+                        </div>
+                    </div>
+                    
+                    <div class="row g-2 mt-2">
+                        <div class="col-md">
+                            <label for="telefono">Teléfono</label>
+                            <input type="text" class="form-control" id="telefono" placeholder="Nombre">
+                        </div>
+
+                        <div class="col-md">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="text" class="form-control" id="correo" placeholder="Razón social">
                         </div>
                     </div>
                     <hr />
@@ -234,59 +259,51 @@
                         <h4>Dirección</h4>
                         <div class="col-md">
                             <label for="calle">Calle</label>
-                            <input type="email" class="form-control" id="calle" placeholder="Calle">
+                            <input type="text" class="form-control" id="calle" placeholder="Calle">
                         </div>
 
                         <div class="col-md">
                             <label for="exterior">Número exterior</label>
-                            <input type="email" class="form-control" id="exterior" placeholder="Número exterior">
+                            <input type="text" class="form-control" id="exterior" placeholder="Número exterior">
                         </div>
 
                         <div class="col-md">
                             <label for="interior">Número interior</label>
-                            <input type="email" class="form-control" id="interior" placeholder="Número interior">
+                            <input type="text" class="form-control" id="interior" placeholder="Número interior">
                         </div>
                     </div>
 
                     <div class="row g-2 mt-2">
                         <div class="col-md">
                             <label for="colonia">Colonia</label>
-                            <input type="email" class="form-control" id="colonia" placeholder="Colonia">
+                            <input type="text" class="form-control" id="colonia" placeholder="Colonia">
                         </div>
 
                         <div class="col-md">
                             <label for="entidad">Entidad federativa</label>
-                            <input type="email" class="form-control" id="entidad" placeholder="Entidad federativa">
+                            <select class="form-select" aria-label="Default select example" id="entidad">
+                                <option selected>Elija una opción</option>
+                                <option value="1">Morelos</option>
+                                <option value="2">Guerrero</option>
+                            </select>
                         </div>
 
                         <div class="col-md">
                             <label for="municipio">Municipio</label>
-                            <input type="email" class="form-control" id="municipio" placeholder="Municipio">
+                            <select class="form-select" aria-label="Default select example" id="municipio">
+                                <option selected>Elija una opción</option>
+                                <option value="1">Temixco</option>
+                                <option value="2">Cuernavaca</option>
+                            </select>
                         </div>
                     </div>
 
                     <div class="row g-2 mt-2">
                         <div class="col-md-4">
                             <label for="postal">Código postal</label>
-                            <input type="email" class="form-control" id="postal" placeholder="Código postal">
+                            <input type="text" class="form-control" id="postal" placeholder="Código postal">
                         </div>
                     </div>
-                    <hr />
-                    <div class="row g-2 mt-2">
-                        <div class="col-md">
-                            <label for="giro">Giro/Actividad principal</label>
-                            <input type="email" class="form-control" id="giro" placeholder="Giro o Actividad principal">
-                        </div>
-                    </div>
-
-                    <div class="row g-2 mt-2">
-                        <div class="col-md">
-                            <label for="representante">Representante legal</label>
-                            <input type="email" class="form-control" id="representante"
-                                placeholder="Representante legal">
-                        </div>
-                    </div>
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -305,14 +322,20 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <h6>Domicilio</h6>
-                <p>Pueblo viejo, Temixco Morelos, Ignacio Zaragoza #9</p>
+                <h6>Teléfono</h6>
+                <p>777-125-6715</p>
+                <hr/>
+                <h6>Correo electrónico</h6>
+                <p>20193tn145@utez.edu.mx</p>
+                <hr/>
+                <h6>Representante legal</h6>
+                <p>Aldo Francisco Hernández Ortiz</p>
                 <hr/>
                 <h6>Giro/Actividad principal</h6>
                 <p>Las aerolíneas son algunas de las empresas más demandadas y poderosas del mundo, ya que al poseer una flota de aviones u otras aeronaves capaces de desplazar mercancía y pasajeros de un rincón del mundo a otro, poseen una altísima demanda en el mundo globalizado de hoy.</p>
                 <hr/>
-                <h6>Representante legal</h6>
-                <p>Aldo Francisco Hernández Ortiz</p>
+                <h6>Domicilio</h6>
+                <p>Pueblo viejo, Temixco Morelos, Ignacio Zaragoza #9</p>
                 <hr/>
             </div>
             <div class="modal-footer">
