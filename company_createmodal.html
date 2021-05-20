@@ -53,108 +53,112 @@
 <div class="container">
 <!-- Content here -->
     <div class="row">
-        <div class="" id="registroModal">
+        <div class="" id="exampleModal">
             <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Nueva empresa</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-    
-                        <div class="row g-2">
-                            <div class="col-md">
-                                <label for="nombreEmpresa">Nombre Empresa</label>
-                                <input type="text" class="form-control" id="nombreEmpresa" placeholder="Nombre">
-                            </div>
-    
-                            <div class="col-md">
-                                <label for="razon">Razón social</label>
-                                <input type="text" class="form-control" id="razon" placeholder="Razón social">
-                            </div>
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Registrar Empresa</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <label for="nombreEmpresa">RFC</label>
+                            <input type="text" class="form-control" id="rfc" placeholder="RFC">
                         </div>
-    
-                        <div class="row g-2 mt-2">
-                            <div class="col-md">
-                                <label for="nombreEmpresa">Giro/Actividad principal</label>
-                                <input type="text" class="form-control" id="nombreEmpresa" placeholder="Nombre">
-                            </div>
-    
-                            <div class="col-md">
-                                <label for="razon">Representante legal</label>
-                                <input type="text" class="form-control" id="razon" placeholder="Razón social">
-                            </div>
-                        </div>
-                        
-                        <div class="row g-2 mt-2">
-                            <div class="col-md">
-                                <label for="telefono">Teléfono</label>
-                                <input type="text" class="form-control" id="telefono" placeholder="Nombre">
-                            </div>
-    
-                            <div class="col-md">
-                                <label for="correo">Correo electrónico</label>
-                                <input type="text" class="form-control" id="correo" placeholder="Razón social">
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row g-2 mt-3">
-                            <h4>Dirección</h4>
-                            <div class="col-md">
-                                <label for="calle">Calle</label>
-                                <input type="text" class="form-control" id="calle" placeholder="Calle">
-                            </div>
-    
-                            <div class="col-md">
-                                <label for="exterior">Número exterior</label>
-                                <input type="text" class="form-control" id="exterior" placeholder="Número exterior">
-                            </div>
-    
-                            <div class="col-md">
-                                <label for="interior">Número interior</label>
-                                <input type="text" class="form-control" id="interior" placeholder="Número interior">
-                            </div>
-                        </div>
-    
-                        <div class="row g-2 mt-2">
-                            <div class="col-md">
-                                <label for="colonia">Colonia</label>
-                                <input type="text" class="form-control" id="colonia" placeholder="Colonia">
-                            </div>
-    
-                            <div class="col-md">
-                                <label for="entidad">Entidad federativa</label>
-                                <select class="form-select" aria-label="Default select example" id="entidad">
-                                    <option selected>Elija una opción</option>
-                                    <option value="1">Morelos</option>
-                                    <option value="2">Guerrero</option>
-                                </select>
-                            </div>
-    
-                            <div class="col-md">
-                                <label for="municipio">Municipio</label>
-                                <select class="form-select" aria-label="Default select example" id="municipio">
-                                    <option selected>Elija una opción</option>
-                                    <option value="1">Temixco</option>
-                                    <option value="2">Cuernavaca</option>
-                                </select>
-                            </div>
-                        </div>
-    
-                        <div class="row g-2 mt-2">
-                            <div class="col-md-4">
-                                <label for="postal">Código postal</label>
-                                <input type="text" class="form-control" id="postal" placeholder="Código postal">
-                            </div>
+
+                        <div class="col-md">
+                            <label for="nombreEmpresa">Nombre Empresa</label>
+                            <input type="text" class="form-control" id="nombreEmpresa" placeholder="Nombre">
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-primary">Guardar empresa</button>
+
+                    <div class="row g-2 mt-2">
+                        <div class="col-md">
+                            <label for="razon">Razón social</label>
+                            <input type="text" class="form-control" id="razon" placeholder="Razón social">
+                        </div>
+
+                        <div class="col-md">
+                            <label for="nombreEmpresa">Giro/Actividad principal</label>
+                            <textarea type="text" class="form-control" id="nombreEmpresa" placeholder="Giro o actividad principal" rows="1"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-2 mt-2">
+                        <div class="col-md">
+                            <label for="razon">Representante legal</label>
+                            <input type="text" class="form-control" id="razon" placeholder="Razón social">
+                        </div>
+
+                        <div class="col-md">
+                            <label for="telefono">Teléfono</label>
+                            <input type="text" class="form-control" id="telefono" placeholder="Nombre">
+                        </div>
+                    </div>
+
+                    <div class="row g-2 mt-2">
+                        <div class="col-md-6">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" class="form-control" id="correo" placeholder="Razón social">
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row g-2 mt-2">
+                        <label><b>Dirección</b></label>
+                        <div class="col-md">
+                            <label for="entidad">Entidad federativa</label>
+                            <select class="form-select" aria-label="Default select example" id="entidad">
+                                <option selected>Elija una opción</option>
+                                <option value="1">Morelos</option>
+                                <option value="2">Guerrero</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md">
+                            <label for="municipio">Municipio</label>
+                            <select class="form-select" aria-label="Default select example" id="municipio">
+                                <option selected>Elija una opción</option>
+                                <option value="1">Temixco</option>
+                                <option value="2">Cuernavaca</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md">
+                            <label for="colonia">Colonia</label>
+                            <input type="text" class="form-control" id="colonia" placeholder="Colonia">
+                        </div>
+                    </div>
+                    <div class="row g-2 mt-3">
+                        <div class="col-md">
+                            <label for="calle">Calle</label>
+                            <input type="text" class="form-control" id="calle" placeholder="Calle">
+                        </div>
+
+                        <div class="col-md">
+                            <label for="exterior">Número exterior</label>
+                            <input type="text" class="form-control" id="exterior" placeholder="Número exterior">
+                        </div>
+
+                        <div class="col-md">
+                            <label for="interior">Número interior</label>
+                            <input type="text" class="form-control" id="interior" placeholder="Número interior">
+                        </div>
+                    </div>
+
+                    <div class="row g-2 mt-2">
+                        <div class="col-md-4">
+                            <label for="postal">Código postal</label>
+                            <input type="text" class="form-control" id="postal" placeholder="Código postal">
+                        </div>
+                    </div>
+                    <div class="modal-footer mt-2">
+                        <button class="btn btn-secondary"><i class="fas fa-times"></i>Cancelar</button>
+                        <button class="btn btn-primary"><i class="fas fa-check"></i> Registrar Empresa</button>
                     </div>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
     </div>
 </div>
 
