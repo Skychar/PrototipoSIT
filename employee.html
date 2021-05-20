@@ -55,20 +55,21 @@
     <div class="row">
         <!---Employee Table-->
         <div class="mt-5 card table-responsive">
-            <div class="d-flex justify-content-between  mt-3 card-header bg-white">
-                <h3 class="card-title">Lista de Empleados</h3>
-                <button class="btn btn-primary btn-sm" 
+            <div class="col d-flex justify-content-between  mt-3  bg-white border-bottom" >
+                <h3 class="card-title">EMPLEADOS</h3>
+                <button class="btn btn-primary mb-2" 
                 data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <i class="fas fa-plus"></i> Registrar Empleado
                   </button>
             </div>
-            <table class="table">
+            <table class="table table-striped table-hover">
                 <thead>
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">RFC</th>
                     <th scope="col">Nombre completo</th>
-                    <th scope="col">Correo electronico</th>
+                    <th scope="col">Correo electrónico</th>
+                    <th scope="col">Cargo</th>
                     <th scope="col">Estatus</th>
                     <th scope="col"></th>
                   </tr>
@@ -79,7 +80,10 @@
                     <td>JUPEPE91SZDA1</td>
                     <td>Juan Perez Perez</td>
                     <td>juan@gmail.com</td>
-                    <td>Activo</td>
+                    <td>Encargado</td>
+                    <td>
+                      <span class="badge bg-success">Activo</span>
+                    </td>
                     <td>
                         <div class="d-flex justify-content-end">
                             <button class="btn btn-primary  me-2"> 
@@ -96,7 +100,10 @@
                     <td>JOGAPE91GHA1</td>
                     <td>Jose Garcia Perez</td>
                     <td>Jose@gmail.com</td>
-                    <td>Activo</td>
+                    <td>Encargado</td>
+                    <td>
+                      <span class="badge bg-success">Activo</span>
+                    </td>
                     <td>
                         <div class="d-flex justify-content-end">
                             <button class="btn btn-primary  me-2"> 
@@ -113,7 +120,10 @@
                     <td>MAHEPEASD2F1</td>
                     <td>Maria Hernandez Perez</td>
                     <td>Maria@gmail.com</td>
-                    <td>Activo</td>
+                    <td>Encargado</td>
+                    <td>
+                      <span class="badge bg-success">Activo</span>
+                    </td>
                     <td>
                         <div class="d-flex justify-content-end">
                             <button class="btn btn-primary  me-2"> 
@@ -130,7 +140,10 @@
                     <td>ALGAGA123INL1</td>
                     <td>Alfonso Garcia Garcia</td>
                     <td>Alfonso@gmail.com</td>
-                    <td>Activo</td>
+                    <td>Encargado</td>
+                    <td>
+                      <span class="badge bg-success">Activo</span>
+                    </td>
                     <td>
                         <div class="d-flex justify-content-end">
                             <button class="btn btn-primary  me-2"> 
@@ -147,7 +160,10 @@
                     <td>ALQUHEANSDJ1</td>
                     <td>Alejandro Quintero Hernandez</td>
                     <td>Alejandro@gmail.com</td>
-                    <td>Activo</td>
+                    <td>Encargado</td>
+                    <td>
+                      <span class="badge bg-success">Activo</span>
+                    </td>
                     <td>
                         <div class="d-flex justify-content-end">
                             <button class="btn btn-primary  me-2"> 
@@ -164,7 +180,10 @@
                     <td>JIMOPEAXSDXN1</td>
                     <td>Jimena Morales Perez</td>
                     <td>jimena@gmail.com</td>
-                    <td>Activo</td>
+                    <td>Encargado</td>
+                    <td>
+                      <span class="badge bg-success">Activo</span>
+                    </td>
                     <td>
                         <div class="d-flex justify-content-end">
                             <button class="btn btn-primary  me-2"> 
@@ -181,7 +200,10 @@
                     <td>VIMAGASADAD1</td>
                     <td>Victor Martinez Garcia</td>
                     <td>victor@gmail.com</td>
-                    <td>Activo</td>
+                    <td>Encargado</td>
+                    <td>
+                      <span class="badge bg-success">Activo</span>
+                    </td>
                     <td>
                         <div class="d-flex justify-content-end">
                             <button class="btn btn-primary  me-2"> 
@@ -198,7 +220,10 @@
                     <td>ANROAGASDAD1</td>
                     <td>Antonio Robles Aguilar</td>
                     <td>antonio@gmail.com</td>
-                    <td>Activo</td>
+                    <td>Encargado</td>
+                    <td>
+                      <span class="badge bg-danger">Inactivo</span>
+                    </td>
                     <td>
                         <div class="d-flex justify-content-end">
                             <button class="btn btn-primary  me-2"> 
@@ -216,7 +241,7 @@
                 <nav aria-label="...">
                     <ul class="pagination">
                       <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
                       </li>
                       <li class="page-item"><a class="page-link" href="#">1</a></li>
                       <li class="page-item active" aria-current="page">
@@ -224,7 +249,7 @@
                       </li>
                       <li class="page-item"><a class="page-link" href="#">3</a></li>
                       <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
+                        <a class="page-link" href="#">Siguiente</a>
                       </li>
                     </ul>
                   </nav>
@@ -242,21 +267,6 @@
                   <form action="">
                     <div class="row">
                       <div class="col-4 mb-3">
-                        <label for="" class="form-label">Nombre(s)</label>
-                        <input type="text" class="form-control" placeholder="Nombre(s)"/>
-                      </div>
-
-                      <div class="col-4 mb-3">
-                        <label for="" class="form-label">Primer apellido</label>
-                        <input type="text" class="form-control" placeholder="Primer apellido"/>
-                      </div>
-
-                      <div class="col-4 mb-3">
-                        <label for="" class="form-label">Segundo apellido</label>
-                        <input type="text" class="form-control" placeholder="Segundo apellido"/>
-                      </div>
-
-                      <div class="col-4 mb-3">
                         <label for="" class="form-label">RFC</label>
                         <input type="text" class="form-control" placeholder="RFC"/>
                       </div>
@@ -264,11 +274,36 @@
                         <label for="" class="form-label">Correo electrónico</label>
                         <input type="text" class="form-control" placeholder="Correo electrónico"/>
                       </div>
+                      <div class="col-4 mb-3">
+                        <label for="" class="form-label">Nombre(s)</label>
+                        <input type="text" class="form-control" placeholder="Nombre(s)"/>
+                      </div>
+                      <div class="col-4 mb-3">
+                        <label for="" class="form-label">Primer apellido</label>
+                        <input type="text" class="form-control" placeholder="Primer apellido"/>
+                      </div>
+                      <div class="col-4 mb-3">
+                        <label for="" class="form-label">Segundo apellido</label>
+                        <input type="text" class="form-control" placeholder="Segundo apellido"/>
+                      </div>
+                      <div class="col-4 mb-3">
+                        <label for="" class="form-label">Rol</label>
+                        <select class="form-select" >
+                          <option value="1">Rol 1</option>
+                          <option value="2">Rol 2</option>
+                        </select>
+                      </div>
+                      <div class="col-8 mb-3">
+                        <label for="" class="form-label">Cargo</label>
+                        <input type="text" class="form-control" placeholder="Cargo"/>
+                      </div>
                     </div>
                     <div class="row">
                       <div class="col-lg-12 mb-3 text-end">
-                        <button class="btn btn-secondary">Cancelar</button>
-                        <button class="btn btn-primary">Registrar</button>
+                        <button class="btn btn-secondary">
+                          <i class="fas fa-times"></i> Cancelar</button>
+                        <button class="btn btn-primary">
+                          <i class="fas fa-check"></i> Registrar</button>
                       </div>
                     </div>
                   </form>
@@ -278,7 +313,6 @@
           </div>
     </div>
 </div>
-
 </body>
 <!-- Importaciones Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
